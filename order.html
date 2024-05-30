@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body{
+          background-image: url('images/Background.png');
+          background-size: cover; 
+          background-position: center; 
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Antic&family=Anton&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+    
+
+<title>Order | AVZ's Takoyaki</title>
+<link rel="icon" href="images/Logo.png">
+<link rel="stylesheet" href="css/style.css">
+<script defer src="js/script.js"></script>
+</head>
+
+<body><nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="order.html">Order</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+    <section class="main">
+        <div class="tab-container">
+                <div class="side-nav">
+                        <input type="radio" id="tab-home" name="tabs" checked>
+                        <label for="tab-home" onclick="showContent('content-home')">Takoyaki</label>
+                    
+                        <input type="radio" id="tab-pricing" name="tabs">
+                        <label for="tab-pricing" onclick="showContent('content-pricing')">Others</label>
+                    
+                        <input type="radio" id="tab-about" name="tabs">
+                        <label for="tab-about" onclick="showContent('content-about')">Drinks</label>
+
+                        <input type="radio" id="tab-about" name="tabs">
+                        <label for="tab-cart" onclick="showContent('content-cart')">
+                           <div class="div22">
+                                <div class="texts" style="margin-top: 2%;">
+                                    <img src="images/CartIcon.png" >
+                                </div>
+                           </div>
+                        </label>
+                    </div>
+
+        </div>
+        
+        <div>    
+            <div class="tab-content" id="content-home">
+                <div class="about">
+                        <div class="texts">
+                            Takoyaki
+                        </div>
+                </div>
+                <ul class="menu">
+
+                    <li>
+                        <div class="menu-item" onclick="openModal('baby-octopus-details')">
+                                <span>Baby Octopus</span><br>
+                                        <img src="images/Baby Octopus.jpg"><br>
+                                <span class="item-price">₱</span>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="menu-item" onclick="openModal('baby-octopus-details')">
+                                <span>Calamares</span><br>
+                                        <img src="images/Calamares.jpg"><br>
+                                <span class="item-price">₱</span>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="menu-item" onclick="openModal('baby-octopus-details')">
+                                <span>California Maki</span><br>
+                                        <img src="images/California Maki 2.jpg"><br>
+                                <span class="item-price">₱</span>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="menu-item" onclick="openModal('baby-octopus-details')">
+                                <span>Cheeseburger Takoyaki</span><br>
+                                        <img src="images/Cheeseburger Takoyaki.jpg"><br>
+                                <span class="item-price">₱</span>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="menu-item" onclick="openModal('baby-octopus-details')">
+                                <span>Crab and Corn</span><br>
+                                        <img src="images/Crab and Corn.jpg"><br>
+                                <span class="item-price">₱</span>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="menu-item" onclick="openModal('baby-octopus-details')">
+                                <span>Takoyaki Tray</span><br>
+                                        <img src="images/Custom Flavor Takoyaki Tray.jpg"><br>
+                                <span class="item-price">₱</span>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="menu-item" onclick="openModal('baby-octopus-details')">
+                                <span>Garlic Shrimp</span><br>
+                                        <img src="images/Garlic Shrimp.jpg"><br>
+                                <span class="item-price">₱</span>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="menu-item" onclick="openModal('baby-octopus-details')">
+                                <span>Mixed Flavor Tako Tray</span><br>
+                                        <img src="images/Mixed Flavor Tako Tray.jpg"><br>
+                                <span class="item-price">₱</span>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="menu-item" onclick="openModal('baby-octopus-details')">
+                                <span>Octo Bites</span><br>
+                                        <img src="images/Octo Bites.jpg"><br>
+                                <span class="item-price">₱</span>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="menu-item" onclick="openModal('baby-octopus-details')">
+                                <span>Seafood Okonomiyaki</span><br>
+                                        <img src="images/Seafood Okonomiyaki (Also in Pork or Chicken Okonomiaki).jpg"><br>
+                                <span class="item-price">₱</span>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="menu-item" onclick="openModal('baby-octopus-details')">
+                                <span>Squid Pops</span><br>
+                                        <img src="images/Squid Pops.jpg"><br>
+                                <span class="item-price">₱</span>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="menu-item" onclick="openModal('baby-octopus-details')">
+                                <span>Tonkatsu</span><br>
+                                        <img src="images/Tonkatsu.jpg"><br>
+                                <span class="item-price">₱</span>
+                        </div>
+                    </li>
+
+                </ul>
+
+
+                <div id="baby-octopus-details" class="modal">
+                        <div class="modal-content">
+                                
+                            <span class="close" onclick="closeModal('baby-octopus-details')">&times;</span>
+                            <div class="product">
+                                <h2>Baby Octopus</h2>
+                                <img src="images/Baby Octopus.jpg">
+                                
+                            </div>
+                            <div class="details">
+                                        <div class="texts">
+                                            Add
+                                        </div>
+                        </div>
+
+
+                        </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="tab-content" id="content-pricing">
+                <div class="takobar">
+                        <div class="texts">
+                            Others
+                        </div>
+                </div>
+                <ul class="menu">
+                    <li>
+                            <img src="">
+                            
+                    </li>
+                    <li>
+                            <img src="">
+                            
+                    </li>
+                    <li>
+                            <img src="">
+                            
+                    </li>
+                </ul>
+            </div>
+
+
+
+
+
+
+            <div class="tab-content" id="content-about">
+                <div class="takobar">
+                        <div class="texts">
+                            Drinks
+                        </div>
+                </div>
+                <ul class="menu">
+                    <li>
+                            <img src="">
+                            
+                    </li>
+                    <li>
+                            <img src="">
+                            
+                    </li>
+                    <li>
+                            <img src="">
+                            
+                    </li>
+                    <li>
+                        <img src="">
+                        
+                    </li>
+                </ul>
+            </div>
+
+
+
+            <div class="tab-content" id="content-cart">
+                <div class="takobar">
+                        <div class="texts">
+                            Cart
+                        </div>
+                </div>
+                <ul class="menu">
+                    <li>
+                            <img src="">
+                            
+                    </li>
+                    <li>
+                            <img src="">
+                            
+                    </li>
+                    <li>
+                            <img src="">
+                            
+                    </li>
+                </ul>
+                <div class="div22">
+                        <div class="texts">
+                            Check Out
+                        </div>
+                   </div>
+            </div>
+
+
+
+
+
+
+        </div>
+
+    </section>
+    <footer>
+        <p> Copyright © 2024 AVZ's Takoyaki House. All rights reserved.</p>
+     </footer>
+</body>
+</html>
