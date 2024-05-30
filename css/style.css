@@ -252,10 +252,6 @@ nav ul li a:hover {
   border-radius: 3px 0 0 3px;
 }
 
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
 
 .numbertext {
   color: #f2f2f2;
@@ -590,7 +586,24 @@ input[type="radio"]:checked ~ .tab-content {
     font-weight: 400;
     font-style: normal;
     }
-
+    .div223 {
+        background: rgb(255,49,49);
+        background: linear-gradient(0deg, rgba(255,49,49,1) 0%, rgba(255,145,77,1) 100%);
+        margin: 1%;
+        border: 2px solid white;
+        border-radius: 5px;
+        height: 10vh;
+        position: relative; 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        align-items: center;
+    }
+    .div223 .texts {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        }
     .side-nav {
         display: flex;
         flex-direction: column;
@@ -757,7 +770,22 @@ input[type="radio"]:checked ~ .tab-content {
     font-weight: 400;
     font-style: normal;
     }
-
+    .set {
+        width: 50%;
+        margin-bottom: 1%;
+        height: 5vh;
+        position: relative; 
+        margin-top: 2%;
+    }
+    .set .texts {
+        color: white;
+        font-size: 2em;
+        font-family: "Anton", sans-serif;
+        }
+    .set hr{
+        height: 5px; 
+        background-color: white; 
+    }
     .modal {
         display: none;
         position: fixed; 
@@ -823,7 +851,7 @@ input[type="radio"]:checked ~ .tab-content {
 
     .details .texts {
         color: white;
-        font-size: 2em;
+        font-size: 1em;
         position: absolute;
         top: 50%;
         left: 50%;
